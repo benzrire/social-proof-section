@@ -1,0 +1,246 @@
+html, body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Spartan", sans-serif;
+  font-size: 14px;
+
+  background-image: url(./../../images/bg-pattern-top-desktop.svg), url(./../../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.5;
+
+  position: fixed;
+  left: 50%;
+  bottom: 15px;
+
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.sc-social {
+  position: relative;
+}
+
+.sc-social .container {
+  position: relative;
+
+  width: 100%;
+  max-width: 1110px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sc-social .container > p {
+  line-height: 1.9;
+  color: hsl(303, 10%, 53%);
+
+  width: 100%;
+  max-width: 440px;
+  margin: 10px 0 0 0;
+}
+
+.sc-social .rates {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sc-social .rates .rate {
+  width: 445px;
+  box-sizing: border-box;
+
+  padding: 17px 30px;
+  margin-top: 15px;
+  margin-right: auto;
+  border: none;
+  border-radius: 10px;
+  background: hsl(300, 24%, 96%);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sc-social .rates .rate .star img:not(:last-child) {
+  margin-right: 5px;
+}
+
+.sc-social .rates .rate p {
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+
+  margin: 0 0 0 30px;
+}
+
+.sc-social .reviews {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  margin-top: 70px;
+}
+
+.sc-social .reviews .review {
+  width: 350px;
+  padding: 40px 30px;
+  border: none;
+  border-radius: 10px;
+  background: hsl(300, 43%, 22%);
+}
+
+.sc-social .reviews .review:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sc-social .reviews .review > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: hsl(300, 24%, 96%);
+
+  margin: 0;
+}
+
+.sc-social .reviews .review .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.sc-social .reviews .review .profile img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.sc-social .reviews .review .profile .info p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.sc-social .reviews .review .profile .info p:first-child {
+  font-weight: 700;
+  color: hsl(300, 24%, 96%);
+}
+
+.sc-social .reviews .review .profile .info p:last-child {
+  margin-top: 5px;
+  color: hsl(333, 80%, 67%);
+}
+
+@media screen and (max-width: 767px) {
+  html, body {
+    height: auto;
+  }
+
+  body {
+    justify-content: flex-start;
+
+    background-image: url(./../../images/bg-pattern-top-mobile.svg), url(./../../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+  }
+
+  .attribution {
+    position: relative;
+    left: 0;
+    bottom: 0;
+
+    padding: 10px 0;
+  
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .sc-social {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .sc-social .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px;
+
+    box-sizing: border-box;
+  }
+
+  .sc-social .container > p {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .sc-social h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .sc-social .rates {
+    position: relative;
+    flex-direction: column;
+
+    margin-top: 40px;
+  }
+
+  .sc-social .rates .rate {
+    width: 100%;
+    margin-left: 0 !important;
+
+    flex-direction: column;
+  }
+
+  .sc-social .rates .rate p {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .sc-social .reviews {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .sc-social .reviews .review {
+    box-sizing: border-box;
+    width: 100%;
+
+    margin-top: 0 !important;
+  }
+
+  .sc-social .reviews .review:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
